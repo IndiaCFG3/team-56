@@ -110,30 +110,19 @@ p{
 <body>
 
 <h1>SIGN UP</h1>
-
-<form action="tsignup.php" method="post">
-
-   
-   
-    <label for="uname"><b>Username</b></label><br>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-    <br>
-    <label for="email"><b>Email</b></label><br>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br>
-    <label for="psw"><b>Password</b></label><br>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    <label for="psw2"><b>Confirm Password</b></label><br>
-    <input type="password" placeholder="Confirm Password" name="psw2" required>
-    <br>
-     <div class="submit">
-     <button type="submit" name="register">Register</button>
-      </div>
-    <p>Already have an account? <a href="tlogin.php">Log In</a> </p>
-
-  </div>
+            
+<form class="user" action="includes/signup.inc.php" method="POST" >
+            <div class="form-group"><input required class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="User Name" name="uid"></div>
+            <div class="form-group"><input required class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address" name="email"></div>
+            <div class="form-group row">
+            <div class="col-sm-6 mb-3 mb-sm-0"><input required class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Password" name="password"></div>
+            <div class="col-sm-6"><input required class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repeat Password" name="password_repeat"></div>
+            </div><button class="btn btn-primary btn-block text-white btn-user" type="submit" name="signup-submit">Register Account</button>
+<hr>
 </form>
-
+            
+<div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
+<div class="text-center"><a class="small" href="login.html">Already have an account? Login!</a></div>
+            
 </body>
 </html>
