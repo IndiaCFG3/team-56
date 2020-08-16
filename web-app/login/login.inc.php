@@ -30,8 +30,8 @@
                     else if($pwdcheck == true){
                         session_start();
                         $_SESSION['username']=$rows['uid'];
-                        redirect('../afterlogin.html');
-                        //header("Location: ../../index.php?login=success");
+                        //redirect('../afterlogin.html');
+                        header("Location: ../../afterlogin.html?login=success");
                         exit();
                     }
                 }
