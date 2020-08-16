@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Analysis</title>
+    <title>Student Analysis Report</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 </head>
 
 <body>
-    <div>Student Analysis</div>
-    <div style = "max-width: 500px; max-height: 350px;">
+    <div>Student Analysis Report</div>
+    <div style="max-width: 500px; max-height: 350px;">
         <canvas id="bar-chart" width="800" height="450"></canvas>
 
         <script>
@@ -22,7 +22,7 @@
                         {
                             label: "Skill Count",
                             backgroundColor: ["#39c", "#a9c", "#3cb"],
-                            data: [4, 3, 2]
+                            data: [2, 2, 2]
                         }
                     ]
                 },
@@ -30,12 +30,7 @@
                     legend: { display: false },
                     title: {
                         display: true,
-                        text: ''
-                    },
-                    scales: {
-                        xAxes: [{     
-                            beginAtZero: true
-                        }]
+                        text: 'Student Analysis Report'
                     }
                 }
             });
