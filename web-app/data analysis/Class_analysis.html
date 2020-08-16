@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Analysis Report</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+
+<body>
+    <div>Class Analysis Report</div>
+    <div style="max-width: 500px; max-height: 350px;">
+        <canvas id="bar-chart" width="800" height="450"></canvas>
+    </div>
+    <div style="max-width: 500px; max-height: 350px;">
+        <canvas id="count-chart" width="800" height="450"></canvas>
+    </div>
+
+    <script>
+        new Chart(document.getElementById("bar-chart"), {
+            type: 'bar',
+            data: {
+                labels: ["Collaboration", "Critical Thinking", "Creative"],
+                datasets: [
+                    {
+                        label: "Skill Count",
+                        backgroundColor: ["#ac5", "#6be", "#a9e"],
+                        data: [3, 3, 3]
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Class Analysis Report'
+                }
+            }
+        });
+        var n = 10;
+        var sstr = [];
+        var d = [];
+        for (var i = 1; i <= n; i++) {
+            sstr.push("St " + i);
+            d.push(5);
+        }
+        console.log(sstr, d);
+        new Chart(document.getElementById("count-chart"), {
+            type: 'bar',
+            data: {
+                labels: sstr,
+                datasets: [
+                    {
+                        label: "Skill total",
+                        backgroundColor: ["#abc", "#bac", "#acb", "abc", "#acb", "#acb", "#bac", "#abc", "#acb", "#cab"],
+                        data: d
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Class Analysis Report'
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
