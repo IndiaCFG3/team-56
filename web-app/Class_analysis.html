@@ -14,8 +14,9 @@
         <canvas id="bar-chart" width="800" height="450"></canvas>
     </div>
     <div style="max-width: 500px; max-height: 350px;">
-    <canvas id="count-chart" width="800" height="450"></canvas>
+        <canvas id="count-chart" width="800" height="450"></canvas>
     </div>
+
     <script>
         new Chart(document.getElementById("bar-chart"), {
             type: 'bar',
@@ -46,13 +47,13 @@
         }
         console.log(sstr, d);
         new Chart(document.getElementById("count-chart"), {
-            type: 'bar',    
+            type: 'bar',
             data: {
                 labels: sstr,
                 datasets: [
                     {
                         label: "Skill total",
-                        backgroundColor: ["#abc", "#bac", "#acb","abc", "#acb", "#acb","#bac", "#abc", "#acb","#cab"],
+                        backgroundColor: ["#abc", "#bac", "#acb", "abc", "#acb", "#acb", "#bac", "#abc", "#acb", "#cab"],
                         data: d
                     }
                 ]
