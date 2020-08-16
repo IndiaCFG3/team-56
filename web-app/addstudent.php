@@ -117,7 +117,7 @@ p{
 
 <h1>ADD A STUDENT</h1>
 
-<form action="addstudent.php" method="post">
+<form action="studentserverdetails.php" method="post">
 
   <div class="container">
     <label for="username"><b>Name</b></label><br>
