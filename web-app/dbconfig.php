@@ -2,7 +2,7 @@
 $servername="localhost";
 $dbuser="root";
 $dbpassword="";
-$dbname="code for good team 56";
+$dbname="team56";
 
 
 $conn=mysqli_connect($servername,$dbuser,$dbpassword,$dbname);
