@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
 <?php
 $con = mysqli_connect("localhost","root", "password","mydb");
 if (!$con)
@@ -13,6 +23,12 @@ if (mysqli_num_rows($result) > 0)
         $n = $row['class'];
         $k = $row['no_of_students'];
         echo "$id,' ',$n,' ',$k";
+        ?>
+       <a href="getvalues.php?id='<?php $row ?>'"></a>
+        <?php
      }
 }
 ?>
+
+</body>
+</html>
