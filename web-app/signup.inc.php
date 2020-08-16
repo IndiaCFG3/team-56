@@ -49,7 +49,8 @@
                         $hashpwd=password_hash($password,PASSWORD_DEFAULT);
                         mysqli_stmt_bind_param($stmt,"sss",$username,$mail,$hashpwd);
                         mysqli_stmt_execute($stmt);
-                        header("Location: ../register.php?signup=success");
+                        redirect('../afterlogin.html');
+                        //header("Location: ../register.php?signup=success");
                         exit();
                     }
                 }
