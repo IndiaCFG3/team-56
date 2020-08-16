@@ -41,7 +41,7 @@
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: 'School Analysis Report'
+                    text: 'Average School skill score'
                 }
             }
         });
@@ -50,7 +50,6 @@
         var d = [];
         for (var i = 1; i <= n; i++) {
             sstr.push("St " + i);
-            d.push(5);
         }
         console.log(sstr, d);
         new Chart(document.getElementById("count-chart"), {
@@ -66,7 +65,7 @@
                           "#acb", "#acb", "#bac", "#abc", "#acb", "#cab","#abc", "#bac", "#acb",
                            "abc", "#acb", "#acb", "#bac", "#abc", "#acb", "#cab","#abc", "#bac",
                             "#acb", "abc", "#acb", "#acb", "#bac", "#abc", "#acb", "#cab"],
-                        data: d
+                        data: [4,5,3,6,2,7,4,8,2,7,3,5,3,8,2,7,1,5,6,2,6,3,8,8,2,9,10,4,7,4,5,3,6,2,7,4,8,2,7,3,5,3,8,2,7,1,5,6,2,6,3,8,8,2,9,10,4,7,4,5,3,6,2,7,4,8,2,7,3,5,3,8,2,7,1,5,6,2,6,3,8,8,2,9,10,4]
                     }
                 ]
             },
@@ -74,7 +73,7 @@
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: 'School Analysis Report'
+                    text: 'Total skill count'
                 }
             }
         });
